@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>tile-matching game</title>
+         <script type="text/javascript" src="js/tile_matching_game.js"></script>   
+    </head>
+    <body>
+        <h1>tile-matching game</h1>
+        <canvas id="stage" width="140px" height="500px" style="background-color: gray;">
+        </canvas>
+        <table class="button-panel">
+            <tr>
+              <td></td>
+              <td id="rotate-button" class="button">↻</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td id="left-button"class="button">←</td>
+              <td id="fall-button"class="button">↓</td>
+              <td id="right-button"class="button">→</td>
+            </tr>
+        </table>
+        <script>
+            var game = new Game();
+            game.startGame();
+        </script>
+    </body>
+</html>
